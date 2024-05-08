@@ -8,8 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-
-
 body {
     font-family: "Comfortaa", sans-serif;
     font-weight: 500;
@@ -29,7 +27,16 @@ body {
         url('../img/back9.png') 30vw 5vh / 15vh,
         url('../img/back10.png') 68vw 50vh / 20vh,
         url('../img/back11.png') 30vw 55vh / 20vh,
+
+        url('../img/back7.png') 90vw 7vh / 15vh, 
+        url('../img/back8.png') 17vw 79vh / 15vh,
+        url('../img/back9.png') 30vw 5vh / 15vh,
+        url('../img/back10.png') 5vw 35vh / 15vh,
+        url('../img/back11.png') 72vw 87vh / 15vh,
         
+        url('../img/back5.png') 50vw 3vh / 20vh,
+        url('../img/back2.png') 45vw 40vh / 20vh,
+
         url('../img/2.png') center center / cover fixed; 
 
     background-repeat: no-repeat;
@@ -75,7 +82,7 @@ input:focus{
 }
 
 #start-btn,
-.new_game_button,
+.reset_btn,
 .start-btn {
     background-color: #4dc21f;
     font-family: "Comfortaa", sans-serif;
@@ -91,7 +98,7 @@ input:focus{
 }
 
 #start-btn:hover,
-.new_game_button:hover,
+.reset_btn:hover,
 .start-btn:hover  {
     background-color: #3b9119;
 }
