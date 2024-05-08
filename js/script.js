@@ -4,10 +4,10 @@ document.getElementById("params-form").addEventListener("submit", function (even
 
     let resetButton;
     let startButton;
-    let gameInProgress = false; 
+    let gameInProgress = false;
 
     resetButton = document.createElement("button");
-    resetButton.textContent = "Начать заново";
+    resetButton.textContent = "Сбросить";
     document.getElementById('params-form').appendChild(resetButton);
     resetButton.classList.add("reset_btn");
     resetButton.addEventListener("click", resetGame);
@@ -33,7 +33,7 @@ document.getElementById("params-form").addEventListener("submit", function (even
     let bowlAmount = m;
 
     async function feedCat() {
-        if (!gameInProgress || queue.length === 0) return; 
+        if (!gameInProgress || queue.length === 0) return;
 
         if (bowlAmount == 0) {
             await refillBowl();
@@ -103,7 +103,7 @@ document.getElementById("params-form").addEventListener("submit", function (even
         queue.push(i);
     }
 
-    gameInProgress = true; 
+    gameInProgress = true;
     feedCat();
 
     function resetGame() {
@@ -120,7 +120,7 @@ document.getElementById("params-form").addEventListener("submit", function (even
         startButton.textContent = "Запустить";
         document.getElementById('params-form').appendChild(startButton);
         startButton.classList.add("start-btn");
-        
-        gameInProgress = false; 
+
+        gameInProgress = false;
     }
 });
