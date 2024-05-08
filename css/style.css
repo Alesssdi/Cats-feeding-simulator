@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    background: 
+        url('../img/back1.png') 15vw 15vh / 10vh, 
+        url('../img/back5.png') 3vw 3vh / 20vh,
+        url('../img/back2.png') 85vw 70vh / 20vh,
+        url('../img/back3.png') 30vw 85vh / 15vh,
+        url('../img/back4.png') 70vw 10vh / 20vh,
+        url('../img/back5.png') 85vw 35vh / 20vh,
+        url('../img/back6.png') 5vw 65vh / 20vh,
+
+        url('../img/back7.png') 15vw 40vh / 20vh, 
+        url('../img/back8.png') 55vw 75vh / 20vh,
+        url('../img/back9.png') 30vw 5vh / 15vh,
+        url('../img/back10.png') 68vw 50vh / 20vh,
+        url('../img/back11.png') 30vw 55vh / 20vh,
+        
+        url('../img/2.png') center center / cover fixed; 
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+h1{
+    text-align: center;
+    margin: 0 0 40px;
+}
+.emulation {
+    background-color: #fffef7e1;
+    max-width: 600px;
+    margin: 100px auto ;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+form {
+    margin-bottom: 20px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #534e4965;
+    border-bottom: 1px solid #9c9c9c;
+    box-shadow: 0 4px 5px #cfca8e71;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #493258;
+    box-shadow: 0 2px 3px #5a2e56ab;
+}
+
+#start-btn,
+.new_game_button,
+.start-btn {
+    background-color: #4dc21f;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    padding: 10px 20px;
+    display: block; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin: 10px auto 30px;
+}
+
+#start-btn:hover,
+.new_game_button:hover,
+.start-btn:hover  {
+    background-color: #3b9119;
+}
+
+
+#output {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
